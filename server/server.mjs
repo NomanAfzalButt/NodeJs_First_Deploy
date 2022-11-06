@@ -1,10 +1,11 @@
 import express from 'express'
 
 const app = express()
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/L', (req, res) => {
-  console.log(`${req.ip} is asking for L`);
+  console.log(`${req.ip} is asking for Drink`);
+  console.log("Some Changes");
   res.send('Here is your Drinks')
 })
 

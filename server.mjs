@@ -6,8 +6,6 @@ const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
   console.log(`${req.ip} is asking for Drink`);
   console.log("Some Changes");
-  console.log("Some Changes Again");
-  console.log("Some Changes Again Again");
   res.send('Here is your Drinks')
 })
 
